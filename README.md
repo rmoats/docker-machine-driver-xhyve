@@ -69,7 +69,8 @@ $ cd $GOPATH/src/github.com/zchee/docker-machine-driver-xhyve
 
 # Install qcow-format for qcow2 disk image format
 $ brew install opam libev
-$ opam init
+$ opam init --bare
+$ opam switch create 4.05.0 ocaml-base-compiler.4.05.0
 $ eval `opam config env`
 $ opam install uri qcow-format io-page.1.6.1 conf-libev
 
